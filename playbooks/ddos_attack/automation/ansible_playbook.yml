@@ -1,0 +1,32 @@
+---
+- name: DDoS Attack Response Playbook
+  hosts: localhost  # Specify the target host(s) here
+  become: true
+  become_user: root  # Replace with the appropriate sudo user if different
+  
+  tasks:
+    - name: Install iptables if not present
+      apt:
+        name: iptables
+        state: present
+      become: yes
+      
+    - name: Add iptables rule to drop excessive connections from a single IP
+      command: iptables -A INPUT -p tcp --dport 80 -m connlimit --connlimit-above 10 -j DROP
+      become: yes
+      
+    - name: Add iptables rule to limit SYN packets
+      command: sudo iptables -A INPUT -p tcp ! --syn -m state --state NEW -j DROP
+      become: yes
+      
+    - name: Create directory for iptables rules
+      file:
+        path: /etc/iptables
+        state: directory
+        mode: '0755'
+      become: yes
+        
+    - name: Save iptables rules
+      shell: iptables-save > /etc/iptables/rules.v4
+      args:
+        executable: /bin/bash
