@@ -1,0 +1,16 @@
+---
+- name: Ransomware Response Playbook
+  hosts: localhost
+  become: true
+  become_user: root  # Replace with the appropriate sudo user if different
+ 
+  tasks:
+    - name: Install ClamAV if not present
+      apt:
+        name: clamav
+        state: present
+      become: yes
+
+    - name: Scan for ransomware and remove
+      command: clamscan -r --remove /home
+      become: yes
