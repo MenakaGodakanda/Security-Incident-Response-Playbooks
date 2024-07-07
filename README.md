@@ -59,32 +59,28 @@ sudo apt install ansible -y
    source venv/bin/activate
    ```
 
-### 4. Navigate to the desired playbook directory, e.g., for data breach:
-
-```bash
-cd playbooks/data_breach
-```
+### 4. Navigate to the desired playbook directory
+   For example, navigate for data breach:
+   ```bash
+   cd playbooks/data_breach
+   ```
 
 ### 5. Follow the instructions in `playbook.md`.
+   - Run the Provided Scripts:
+   ```bash
+   python scripts/detect_breach.py
+   ```
 
-- Run the Provided Scripts:
-
-```bash
-python scripts/detect_breach.py
-```
-
-- Use Ansible for Automation:
-
-```bash
-ansible-playbook automation/ansible_playbook.yml
-```
+   - Use Ansible for Automation:
+   ```bash
+   ansible-playbook automation/ansible_playbook.yml
+   ```
 
 ### 6. Deactivate the Virtual Environment (Optional)
-When you're done working on your project, you can deactivate the virtual environment.
-
-```bash
-deactivate
-```
+   When you're done working on your project, you can deactivate the virtual environment.
+   ```bash
+   deactivate
+   ```
 
 ## Project Directory Structure
 ```
