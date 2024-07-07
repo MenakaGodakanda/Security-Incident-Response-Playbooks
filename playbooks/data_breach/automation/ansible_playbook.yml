@@ -1,0 +1,47 @@
+---
+- name: Data Breach Response Playbook
+  hosts: localhost
+  become: true
+  become_user: root  # Replace with the appropriate sudo user if different
+  
+  tasks:
+    - name: Ensure auditd is installed
+      apt:
+        name: auditd
+        state: present
+      become: yes
+
+    - name: Start and enable auditd service
+      service:
+        name: auditd
+        state: started
+        enabled: yes
+      become: yes
+
+    - name: Monitor access to sensitive files
+      command: |
+        auditctl -w /etc/passwd -p wa -k passwd_changes
+      become: yes
+
+    - name: Ensure logrotate is installed
+      apt:
+        name: logrotate
+        state: present
+      become: yes
+
+    - name: Set up log rotation for audit logs
+      copy:
+        content: |
+          /var/log/audit/audit.log {
+              missingok
+              notifempty
+              compress
+              delaycompress
+              daily
+              rotate 7
+              postrotate
+                  /etc/init.d/auditd reload > /dev/null
+              endscript
+          }
+        dest: /etc/logrotate.d/audit
+      become: yes
