@@ -1,0 +1,2 @@
+/home/user/infected_file.exe: Win.Trojan.Ransom-1 FOUND
+/home/user/another_infected_file.exe: Win.Trojan.Ransom-2 FOUND
