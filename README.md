@@ -15,9 +15,9 @@ This repository contains security incident response playbooks for various scenar
 
 ## Playbooks
 
-- [Data Breach]()
-- [DDoS Attack]()
-- [Ransomware]()
+- [Data Breach](playbooks/data_breach)
+- [DDoS Attack](playbooks/ddos_attack)
+- [Ransomware](playbooks/ransomware)
 
 ## Installation
 
