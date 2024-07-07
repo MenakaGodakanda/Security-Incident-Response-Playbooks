@@ -56,30 +56,23 @@ This repository contains security incident response playbooks for various scenar
    virtualenv venv --python=python3
    ```
 
-### 3. Activate the Virtual Environment
+### 3. Activate the Virtual Environment:
    Activate the virtual environment to start using it. You should see (venv) prefixed to your command prompt, indicating that the virtual environment is active.
    ```bash
    source venv/bin/activate
    ```
 
-### 4. Navigate to the desired playbook directory
+### 4. Navigate to the Desired Playbook Directory:
    For example, navigate for data breach:
    ```bash
    cd playbooks/data_breach
    ```
 
-### 5. Follow the instructions in `playbook.md`.
-   - Run the Provided Scripts:
-   ```bash
-   python scripts/detect_breach.py
-   ```
+### 5. Follow the Instructions in `playbook.md`:
+   - Run the provided `python` scripts.
+   - Use `Ansible` for automation.
 
-   - Use Ansible for Automation:
-   ```bash
-   ansible-playbook automation/ansible_playbook.yml
-   ```
-
-### 6. Deactivate the Virtual Environment (Optional)
+### 6. Deactivate the Virtual Environment (Optional):
    When you're done working on your project, you can deactivate the virtual environment.
    ```bash
    deactivate
