@@ -23,6 +23,7 @@ This playbook provides step-by-step instructions for responding to a ransomware 
     python scripts/remove_ransomware.py
     ```
 - The output should look like this:<br><br>
+    ![Screenshot 2024-07-07 233123](https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/assets/156875412/f97d2d32-55d0-46bb-b0c2-ba9ba2a15940)
 
 - Check the `playbooks/ransomware/examples/` directory and verify the `example_output.txt` is created.
 
@@ -37,3 +38,4 @@ This playbook provides step-by-step instructions for responding to a ransomware 
 - The playbook installs and configures necessary services, and the output demonstrates the steps Ansible takes to complete these tasks.
 
 - The output should look like this:<br><br>
+    ![Screenshot 2024-07-08 002456](https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/assets/156875412/b7e5f2c7-2acc-465d-af4b-371ec51216ac)
