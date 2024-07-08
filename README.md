@@ -61,6 +61,7 @@ This repository contains security incident response playbooks for various scenar
    ```bash
    source venv/bin/activate
    ```
+![Screenshot 2024-07-07 231756](https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/assets/156875412/3f792b61-47bf-426f-a141-0513f27771c9)
 
 ### 4. Navigate to the Desired Playbook Directory:
    For example, navigate for data breach:
