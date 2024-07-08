@@ -31,10 +31,10 @@ This playbook provides step-by-step instructions for responding to a ransomware 
 - The Ansible playbook is used to automate the response to a security incident.
 - Make sure your virtual environment is activated and run the Ansible playbook using the following command:
     ```
-    ansible-playbook -i inventory automation/ansible_playbook.yml
+    ansible-playbook -i automation/inventory automation/ansible_playbook.yml -K
     ```
 - `-i automation/inventory`: This flag specifies the path to your inventory file. Adjust the path if your inventory file is located elsewhere.
-
+- `-K`: This flag prompts for the sudo password interactively.
 - The playbook installs and configures necessary services, and the output demonstrates the steps Ansible takes to complete these tasks.
 
 - The output should look like this:<br><br>
