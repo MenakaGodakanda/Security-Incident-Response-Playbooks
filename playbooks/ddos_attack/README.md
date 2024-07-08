@@ -23,6 +23,7 @@ This playbook provides step-by-step instructions for responding to a DDoS attack
     python scripts/mitigate_ddos.py
     ```
 - The output should look like this:<br><br>
+    ![Screenshot 2024-07-08 000920](https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/assets/156875412/b1e7b02f-7a44-4f66-ab13-978b74adb6e0)
 
 - Check the `playbooks/ddos_attack/examples/` directory and verify the `example_output.txt` is created.
 
@@ -37,3 +38,4 @@ This playbook provides step-by-step instructions for responding to a DDoS attack
 - The playbook installs and configures necessary services, and the output demonstrates the steps Ansible takes to complete these tasks.
 
 - The output should look like this:<br><br>
+    ![Screenshot 2024-07-08 002047](https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/assets/156875412/7141a7bc-492f-49a8-82dd-9997f5bc7d6f)
