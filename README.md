@@ -1,6 +1,7 @@
 # Security Incident Response Playbooks
 
-This repository contains security incident response playbooks for various scenarios such as data breaches, DDoS attacks, and ransomware infections. Each playbook includes step-by-step instructions and automation scripts to handle the incidents effectively.
+This repository contains security incident response playbooks for various scenarios such as data breaches, DDoS attacks, and ransomware infections. Each playbook includes step-by-step instructions and automation scripts to handle the incidents effectively.<br>
+<a href="https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/blob/main/Project_Description.md">Project Description</a>
 
 ## Overview
 
