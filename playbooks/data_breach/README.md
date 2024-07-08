@@ -22,8 +22,8 @@ This playbook provides step-by-step instructions for responding to a data breach
     ```
     python scripts/detect_breach.py
     ```
-The output should look like this:<br><br>
-![Screenshot 2024-07-07 231808](https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/assets/156875412/c887b8bd-2715-4207-ad61-6fc185b59261)
+- The output should look like this:<br><br>
+    ![Screenshot 2024-07-07 231808](https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/assets/156875412/c887b8bd-2715-4207-ad61-6fc185b59261)
 
 - Check the `playbooks/data_breach/examples/` directory and verify the `example_output.txt` is created.
 
@@ -37,6 +37,6 @@ The output should look like this:<br><br>
 
 - The playbook installs and configures necessary services, and the output demonstrates the steps Ansible takes to complete these tasks.
 
-The output should look like this:<br><br>
-![Screenshot 2024-07-07 231826](https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/assets/156875412/fff649c6-4e42-462b-9ce4-a651ac3e7da9)
+- The output should look like this:<br><br>
+    ![Screenshot 2024-07-07 231826](https://github.com/MenakaGodakanda/Security-Incident-Response-Playbooks/assets/156875412/fff649c6-4e42-462b-9ce4-a651ac3e7da9)
 
